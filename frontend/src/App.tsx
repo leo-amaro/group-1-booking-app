@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Layout from "./layouts/Layout";
 import Register from "./pages/Register";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 const App = () => {
   return (
@@ -32,6 +33,14 @@ const App = () => {
           element={
             <Layout>
               <Register />
+            </Layout>
+          }
+        />
+        <Route
+          path="/privacy-policy"
+          element={
+            <Layout>
+              <PrivacyPolicy />
             </Layout>
           }
         />
